@@ -1,17 +1,247 @@
-// styles/Home.module.scss
+.wrapper {
+  background-color: #121212;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
 
 .container {
-    padding: 20px;
+  max-width: 1248px;
+  padding: 20px;
+  margin: auto;
+
+
+}
+
+.introduce {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+
+
+}
+
+.introduce_left {
+  flex: 0 0 45%;
+}
+
+.introduce_right {
+  flex: 0 0 45%;
+}
+
+.cryptoIntro {
+  text-align: center;
+  margin-bottom: 30px;
+
+  h1 {
+    color: #ffc107;
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .inputGroup {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    input {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #333;
+      border-radius: 4px 0 0 4px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #ffc107;
+      border: none;
+      cursor: pointer;
+      border-radius: 0 4px 4px 0;
+    }
+  }
+}
+
+.cryptoList {
+  margin: 20px 0;
+
+  .cryptoItem {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+
+    span {
+      &:nth-child(1) {
+        flex: 2;
+      }
+
+      &:nth-child(2) {
+        flex: 1;
+      }
+
+      &:nth-child(3) {
+        flex: 1;
+
+        &.green {
+          color: green;
+        }
+
+        &.red {
+          color: red;
+        }
+      }
+    }
+  }
+}
+
+.newsList {
+  margin: 20px 0;
+
+  .newsItem {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+  }
+}
+
+.introconnect {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  .connect,
+  .download {
+    text-align: center;
+
+    .icons img,
+    .qrCode img {
+      width: 50px;
+      height: 50px;
+      margin: 0 10px;
+    }
+  }
+}
+
+.faqs {
+  .faq-item {
+    background-color: #1e1e1e;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  .faq-answer {
+    padding: 15px;
+    background-color: #2e2e2e;
+    border-top: 1px solid #444;
+    color: #fff;
+    display: none;
+    /* Hidden by default */
+  }
+
+  .faq-item.active .faq-answer {
+    display: block;
+    /* Show answer when active */
+  }
+
+}
+
+// dowload
+.download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+
+  .phoneSection {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .phoneWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .phoneImage {
+    width: 100%;
+    max-width: 400px;
+    /* Adjust the size as necessary */
+    height: auto;
+  }
+
+  .tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .tab {
+    margin: 0 10px;
+    padding: 5px 10px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .tab.active {
+    border-bottom: 2px solid #f0b90b;
+    /* Highlight the active tab */
+  }
+
+  .tabContent {
+    margin-top: 20px;
+    color: white;
+  }
+
+  .qrCode {
+    flex: 1;
     text-align: center;
   }
-  
-  .title {
-    font-size: 2rem;
-    color: #0070f3;
+
+  .qrCodeLabel {
+    font-size: 18px;
+    margin-bottom: 10px;
   }
-  
-  .description {
-    font-size: 1.5rem;
-    margin-top: 20px;
+
+  .qrCodeImage {
+    width: 150px;
+    /* Adjust the size as necessary */
+    height: 150px;
+    /* Adjust the size as necessary */
+    margin-bottom: 20px;
   }
-  
+
+  .downloadOptions {
+    margin-bottom: 20px;
+  }
+
+  .platforms {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .platformIcon {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+}

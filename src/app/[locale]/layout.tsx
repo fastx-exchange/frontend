@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { NextIntlClientProvider, useMessages } from 'next-intl';
 
 import { AppConfig } from '../../utils/AppConfig';
+import '../../styles/global.css'
 
 export const metadata: Metadata = {
   icons: [

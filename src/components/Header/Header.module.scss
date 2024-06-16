@@ -1,0 +1,50 @@
+// components/Header.module.scss
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1E1E1E;
+    padding: 0.5rem 1rem;
+}
+
+.logo {
+    color: #F0B90B;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 1rem;
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1rem;
+
+        &:hover {
+            color: #F0B90B;
+        }
+    }
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    .button {
+        background-color: #F0B90B;
+        border: none;
+        color: #000;
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        cursor: pointer;
+    }
+
+    i {
+        color: #fff;
+        font-size: 1.2rem;
+        cursor: pointer;
+    }
+}
