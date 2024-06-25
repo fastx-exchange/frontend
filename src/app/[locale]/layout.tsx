@@ -26,7 +26,7 @@ export default function RootLayout(props: {
 
   return (
     <html lang={props.params.locale}>
-      <body>
+      <body style={{margin: "0px"}}>
         <NextIntlClientProvider
           locale={props.params.locale}
           messages={messages}

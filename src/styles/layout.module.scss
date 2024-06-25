@@ -1,0 +1,54 @@
+.header {
+    padding: 10px;
+    width: 100%;
+    background-color: #181A20;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerLeft {
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.headerLeft a {
+    color: aliceblue;
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+    text-wrap: nowrap;
+}
+
+.headerRight {
+    display: flex;
+    padding-right: 80px;
+    color: aliceblue;
+    gap: 15px;
+    align-items: center;
+
+}
+
+.headerButtonLogin {
+    background-color: #50555a;
+    color: white;
+    border: 2px solid #555555;
+    padding: 12px;
+    border-radius:7px;
+    cursor: pointer;
+}
+
+.headerButtonLogin:hover {
+    color: white;
+    background-color: #464a4e;
+}
+
+.headerButtonSignin{
+    background-color: rgb(231, 178, 4);
+    color: black;
+    // width: 90px;
+    // height: 40px;
+    text-align: center;
+    border-radius:7px;
+    cursor: pointer;
+}
