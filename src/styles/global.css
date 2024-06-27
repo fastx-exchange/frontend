@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Binance PLEX";
+    src: url("https://db.onlinewebfonts.com/t/d05c19ccecf7003d248c60ffd6b5e8f7.eot");
+    src: url("https://db.onlinewebfonts.com/t/d05c19ccecf7003d248c60ffd6b5e8f7.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/d05c19ccecf7003d248c60ffd6b5e8f7.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/d05c19ccecf7003d248c60ffd6b5e8f7.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/d05c19ccecf7003d248c60ffd6b5e8f7.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/d05c19ccecf7003d248c60ffd6b5e8f7.svg#Binance PLEX")format("svg");
+}
+
+*
+{
+    font-family: "Binance PLEX";
+    background-color: #181A20;
+}
