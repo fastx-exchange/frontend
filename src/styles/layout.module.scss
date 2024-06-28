@@ -17,9 +17,19 @@
 .headerLeft a {
     color: aliceblue;
     padding: 10px;
+    font-size: 14px;
+    display:flex ;
     align-items: center;
     text-decoration: none;
     text-wrap: nowrap;
+}
+
+.headerLeft :hover {
+    color: rgb(221, 178, 35);
+}
+
+.headerRight div :hover {
+    color: rgb(221, 178, 35);
 }
 
 .headerRight {
@@ -37,6 +47,7 @@
     border: 2px solid #555555;
     padding: 7px 12px;
     border-radius: 7px;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -49,12 +60,15 @@
     background-color: rgb(255, 210, 64);
     color: black;
     padding: 8px 12px;
-    // width: 90px;
-    // height: 40px;
+    font-weight: 600;
     text-align: center;
     border-radius: 7px;
     border: none;
     cursor: pointer;
+}
+
+.headerButtonSignin:hover {
+    background-color: #c5a90b;
 }
 
 .footer {
@@ -70,104 +84,47 @@
     border-bottom: 1px solid #7d8591;
     padding-bottom: 40px;
 }
-
-.footerFirstColumn {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerFirstColumn b {
-    padding: 20px 0px;
+.footerColumn b{
     font-size: 16px;
 }
-
-.footerSecondColumn {
+.footerItemColumn {
     display: flex;
     flex-direction: column;
 }
 
-.footerSecondColumn b {
-    padding: 20px 0px;
-    font-size: 16px;
-}
-
-.footerThirdColumn {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerThirdColumn b {
+.footerItemColumn b {
     padding: 20px 0px;
     font-size: 16px;
 
 }
 
-.footerFourthColumn {
+.footerItemColumnTitle {
     display: flex;
     flex-direction: column;
-}
-
-.footerFourthColumnBusiness {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerFourthColumnBusiness b {
-    padding: 20px 0px;
-    font-size: 16px;
-
-}
-
-.footerFourthColumnLearn {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerFourthColumnLearn b {
-    padding: 20px 0px;
-    font-size: 16px;
-
-}
-
-.footerFifthColumn {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerFifthColumnService {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerFifthColumnService b {
-    padding: 20px 0px;
-    font-size: 16px;
-
-}
-
-.footerFifthColumnSupport {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerFifthColumnSupport b {
-    padding: 20px 0px;
-    font-size: 16px;
-
 }
 
 .footerIcon {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(4, 24px);
+    grid-gap: 24px;
+    padding-top: 20px;
+}
+.footerIcon a :hover{
+    color: #696868 !important;
 }
 
-.footerIconTop{
-    display: flex;
-}
-.footerIconBottom{
-    display: flex;
+.footerColumnBottom {
+    padding-top: 20px;
 
 }
+.footerColumnBottom div {
+    padding-bottom: 20px;
+}
+.footerColumnBottom :hover {
+    color: rgb(221, 178, 35);
+
+}
+
 .footer a {
     text-decoration: none;
     padding: 5px 0px;
@@ -175,8 +132,14 @@
 }
 
 .footer p {
-    width: 200px;
+    width: 200px;   
     margin: 0px auto;
     font-size: 14px;
     color: #B7BDC6;
+}
+
+.footerItemColumn a:hover {
+
+    color: rgb(221, 178, 35);
+
 }
